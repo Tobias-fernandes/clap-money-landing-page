@@ -9,7 +9,7 @@ import { SECTION_IDS } from "@/constants/site";
 export function Faq() {
   return (
     <section id={SECTION_IDS.faq} aria-labelledby="faq-title" className="border-t border-border">
-      <div className="mx-auto grid max-w-300 gap-10 px-4 py-20 md:px-6 lg:grid-cols-12 lg:py-28">
+      <div className="mx-auto grid grid-cols-1 max-w-300 gap-10 px-4 py-20 md:px-6 lg:grid-cols-12 lg:py-28">
         <div className="lg:col-span-4">
           <h2 id="faq-title" className="text-32 leading-[1.08] font-bold tracking-section md:text-42 lg:sticky lg:top-28">
             Perguntas frequentes

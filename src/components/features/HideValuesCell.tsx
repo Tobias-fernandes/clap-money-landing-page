@@ -23,7 +23,7 @@ export function HideValuesCell() {
           Abriu o app no ônibus? Esconda os números e continue usando normalmente.
         </p>
       </div>
-      <div className="mt-auto rounded-xl bg-surface-muted p-4">
+      <div className="mt-auto rounded-xl bg-surface-muted p-3 sm:p-4">
         <div className="flex justify-end">
           <button
             type="button"
@@ -35,7 +35,7 @@ export function HideValuesCell() {
             {hidden ? "Mostrar valores" : "Ocultar valores"}
           </button>
         </div>
-        <div className="mt-2 grid gap-3 sm:grid-cols-2">
+        <div className="mt-2 grid grid-cols-1 gap-3 sm:grid-cols-2">
           <Card className="flex flex-col gap-2 p-4">
             <span className="text-14 font-medium text-content-muted">Saldo atual</span>
             <p className="flex items-baseline gap-1 whitespace-nowrap tabular-nums">
@@ -51,16 +51,16 @@ export function HideValuesCell() {
             </p>
           </Card>
         </div>
-        <Card as="div" className="mt-3 px-4 py-2">
+        <Card as="div" className="mt-3 px-3 py-2 sm:px-4">
           <ul>
             {RECENT.map((entry) => (
               <li key={entry.description} className="flex items-center gap-3 py-2">
-                <CategoryIcon category={entry.category} />
+                <CategoryIcon category={entry.category} className="max-[379px]:hidden" />
                 <span className="flex min-w-0 flex-1 flex-col">
                   <span className="truncate text-14">{entry.description}</span>
-                  <span className="text-13 text-content-faint">{entry.date}/2026 · {entry.category.name}</span>
+                  <span className="truncate text-13 text-content-faint">{entry.date}/2026 · {entry.category.name}</span>
                 </span>
-                <span className={cn("text-14 font-medium tabular-nums", hidden ? "text-content-muted" : entry.cents < 0 ? "text-expense" : "text-income")}>
+                <span className={cn("flex-none text-14 font-medium whitespace-nowrap tabular-nums", hidden ? "text-content-muted" : entry.cents < 0 ? "text-expense" : "text-income")}>
                   {hidden ? "R$ ••••" : formatSigned(entry.cents)}
                 </span>
               </li>

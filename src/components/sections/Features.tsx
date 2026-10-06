@@ -13,7 +13,7 @@ export function Features() {
     <section id={SECTION_IDS.features} aria-labelledby="features-title" className="border-t border-border">
       <div className="mx-auto max-w-300 px-4 py-20 md:px-6 lg:py-28">
         <SectionHeading id="features-title" title="Os detalhes que fazem voltar todo mês." />
-        <div className="mt-12 grid gap-3 md:grid-cols-2 lg:grid-cols-6">
+        <div className="mt-12 grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-6">
           <div className="md:col-span-2 lg:col-span-3 lg:row-span-2">
             <HideValuesCell />
           </div>

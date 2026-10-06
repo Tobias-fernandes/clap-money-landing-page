@@ -131,7 +131,7 @@ function ReviewDialog({ step }: { step: number }) {
               <li
                 key={row.raw}
                 className={cn(
-                  "grid min-h-13 grid-cols-[1.25rem_2.75rem_1fr_auto] items-center gap-x-2.5 border-b border-border px-5 py-2 transition-colors duration-300 last:border-b-0",
+                  "grid min-h-13 grid-cols-[1.25rem_minmax(0,1fr)_auto] items-center gap-x-2.5 border-b border-border px-4 py-2 min-[380px]:grid-cols-[1.25rem_2.75rem_minmax(0,1fr)_auto] sm:px-5 transition-colors duration-300 last:border-b-0",
                   excluded && "bg-surface-muted",
                 )}
               >
@@ -143,12 +143,12 @@ function ReviewDialog({ step }: { step: number }) {
                 >
                   <Check className={cn("size-3", excluded && "invisible")} strokeWidth={3} />
                 </span>
-                <span className="text-13 text-content-muted tabular-nums">{row.date}</span>
+                <span className="text-13 text-content-muted tabular-nums max-[379px]:hidden">{row.date}</span>
                 <span className="flex min-w-0 flex-wrap items-center gap-x-2 gap-y-1" style={{ transitionDelay: `${index * 40}ms` }}>
                   <span className={cn("truncate text-14 transition-opacity duration-300", excluded && "text-content-muted line-through")}>
                     {row.description}
                   </span>
-                  <CategoryTag category={category} className={cn("transition-opacity duration-300", excluded && "opacity-50")} />
+                  <CategoryTag category={category} className={cn("max-w-full overflow-hidden transition-opacity duration-300", excluded && "opacity-50")} />
                   <Source row={row} step={step} />
                 </span>
                 <span

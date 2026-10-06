@@ -9,9 +9,9 @@ import { DashboardPreview } from "./DashboardPreview";
 export function Hero() {
   return (
     <section aria-labelledby="hero-title">
-      <div className="mx-auto grid max-w-300 items-center gap-x-12 gap-y-12 xl:gap-x-20 px-4 pt-10 pb-16 md:px-6 md:pt-14 lg:min-h-[calc(100dvh-4rem)] lg:grid-cols-[minmax(0,1fr)_minmax(0,1.15fr)] lg:py-8">
+      <div className="mx-auto grid grid-cols-1 max-w-300 items-center gap-x-12 gap-y-12 xl:gap-x-20 px-4 pt-10 pb-16 md:px-6 md:pt-14 lg:min-h-[calc(100dvh-4rem)] lg:grid-cols-[minmax(0,1fr)_minmax(0,1.15fr)] lg:py-8">
         <div>
-          <h1 id="hero-title" className="text-44 leading-[1.04] font-bold tracking-hero md:text-60 lg:text-52 xl:text-60">
+          <h1 id="hero-title" className="text-38 leading-[1.04] min-[360px]:text-44 font-bold tracking-hero md:text-60 lg:text-52 xl:text-60">
             Veja o mês que vem antes dele chegar.
           </h1>
           <p className="mt-6 max-w-130 text-18 leading-relaxed text-content-muted md:text-20">

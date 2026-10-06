@@ -16,7 +16,7 @@ const ROWS = [
 export function DataPrivacy() {
   return (
     <section id={SECTION_IDS.privacy} aria-labelledby="privacy-title" className="border-t border-border">
-      <div className="mx-auto grid max-w-300 gap-10 px-4 py-20 md:px-6 lg:grid-cols-12 lg:py-28">
+      <div className="mx-auto grid grid-cols-1 max-w-300 gap-10 px-4 py-20 md:px-6 lg:grid-cols-12 lg:py-28">
         <div className="lg:col-span-5">
           <SectionHeading
             id="privacy-title"

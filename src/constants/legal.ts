@@ -29,7 +29,7 @@ export interface LegalDocumentContent {
 export const LEGAL_CONTACT_EMAIL = "privacidade@clapmoney.com.br"; // TODO(legal): real mailbox.
 
 /** Date of the current version of both documents (ISO). */
-export const LEGAL_UPDATED_AT = "2026-10-05";
+export const LEGAL_UPDATED_AT = "2026-10-06";
 
 export const PRIVACY_POLICY: LegalDocumentContent = {
   title: "Política de Privacidade",
@@ -57,6 +57,7 @@ export const PRIVACY_POLICY: LegalDocumentContent = {
         "Dados financeiros que você registra ou importa: entradas, saídas, parcelamentos, cobranças mensais, categorias, valores, datas, descrições e observações.",
         "Preferências: moeda, início do mês financeiro, meta de gastos, tela inicial e escolhas de notificação.",
         "Registros de acesso (endereço IP, data e hora), que a lei nos obriga a guardar.",
+        "No site clapmoney.com.br, só se você permitir: dados de navegação coletados pelo Google Analytics, como páginas vistas, tempo de visita, tipo de aparelho e navegador e região aproximada. Esses dados não identificam você pelo nome.",
       ],
     },
     {
@@ -80,6 +81,7 @@ export const PRIVACY_POLICY: LegalDocumentContent = {
         "Enviar mensagens necessárias sobre a conta, como a recuperação de senha e a confirmação de troca de e-mail (execução de contrato, art. 7º, V).",
         "Proteger sua conta e o serviço contra acessos indevidos e fraudes (legítimo interesse, art. 7º, IX).",
         "Cumprir obrigações legais, como a guarda dos registros de acesso (art. 7º, II).",
+        "Medir quantas pessoas visitam o site clapmoney.com.br e como ele é usado, para melhorá-lo, com o Google Analytics (consentimento, art. 7º, I). Você pode retirar o consentimento em “Preferências de cookies”, no rodapé do site.",
       ],
     },
     {
@@ -88,19 +90,21 @@ export const PRIVACY_POLICY: LegalDocumentContent = {
       paragraphs: [
         "Não vendemos, alugamos nem compartilhamos seus dados para fins de publicidade.",
         "Seus dados só são acessados por empresas que nos ajudam a operar o serviço (como hospedagem e envio de e-mails), sob contrato e apenas para essa finalidade, ou por autoridades, quando houver ordem judicial ou obrigação legal.",
+        "Se você permitir os cookies de estatísticas no site, os dados de navegação descritos acima são tratados pelo Google (Google Analytics) como operador, e podem ser processados em servidores fora do Brasil, com as garantias previstas na LGPD (art. 33). Desligamos o compartilhamento desses dados para anúncios e os sinais do Google.",
       ],
     },
     {
       id: "cookies",
       title: "6. Cookies e armazenamento no navegador",
       paragraphs: [
-        "Este site de apresentação (clapmoney.com.br) não usa cookies. No aplicativo, na primeira visita, mostramos um aviso para você escolher entre “Aceitar todos” e “Só essenciais”. Guardamos sua resposta num cookie por até 12 meses; se esta política mudar o que armazenamos, perguntamos de novo.",
-        "Você pode mudar de ideia quando quiser em Configurações › Preferências › Lembrar preferências neste aparelho.",
-        "Não usamos cookies de publicidade nem ferramentas que rastreiam você em outros sites.",
+        "No site clapmoney.com.br e no aplicativo, na primeira visita, mostramos um aviso para você escolher entre “Aceitar todos” e “Só essenciais”. Guardamos sua resposta num cookie por até 12 meses; se esta política mudar o que armazenamos, perguntamos de novo.",
+        "Você pode mudar de ideia quando quiser: no site, em “Preferências de cookies”, no rodapé; no aplicativo, em Configurações › Preferências › Lembrar preferências neste aparelho. Se você retirar a permissão de estatísticas, apagamos os cookies do Google Analytics do seu navegador.",
+        "Não usamos cookies de publicidade.",
       ],
       items: [
         "Essenciais (sempre ativos): o cookie de sessão, que mantém você conectado com segurança, e o cookie que guarda a sua escolha neste aviso. Sem eles o serviço não funciona, por isso não dependem de consentimento.",
-        "Preferências (só com a sua permissão): o tema escolhido (claro, escuro ou do sistema), guardado no navegador para valer nas próximas visitas. Se você escolher “Só essenciais”, apagamos essa informação e o tema volta ao padrão quando você fecha o aplicativo.",
+        "Preferências (só no aplicativo e só com a sua permissão): o tema escolhido (claro, escuro ou do sistema), guardado no navegador para valer nas próximas visitas. Se você escolher “Só essenciais”, apagamos essa informação e o tema volta ao padrão quando você fecha o aplicativo.",
+        "Estatísticas (só no site clapmoney.com.br e só com a sua permissão): os cookies _ga e _ga_<identificador> do Google Analytics, que contam visitas e páginas vistas. Eles duram até 13 meses. Sem a sua permissão, o Google Analytics nem é carregado.",
       ],
     },
     {
@@ -117,6 +121,7 @@ export const PRIVACY_POLICY: LegalDocumentContent = {
       paragraphs: [
         "Guardamos seus dados enquanto sua conta existir. Quando você usa “Apagar todas as transações”, o histórico financeiro é removido; quando você exclui a conta, todos os seus dados são apagados.",
         "Os registros de acesso são mantidos por 6 meses, como exige o Marco Civil da Internet (art. 15 da Lei nº 12.965/2014), e depois são descartados.",
+        "Os dados de navegação do Google Analytics são guardados pelo Google por, no máximo, 14 meses e depois apagados.",
       ],
     },
     {

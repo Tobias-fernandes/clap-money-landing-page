@@ -28,6 +28,7 @@ pnpm dev                     # http://localhost:3000
 | ---------------------- | ------------------------------ | ---------------------------------------------------------- |
 | `NEXT_PUBLIC_SITE_URL` | `https://clapmoney.com.br`     | URL canônica, sitemap, robots.txt, Open Graph e JSON-LD    |
 | `NEXT_PUBLIC_APP_URL`  | `https://app.clapmoney.com.br` | Destino de "Entrar" (`/entrar`) e "Criar conta grátis" (`/criar-conta`) |
+| `NEXT_PUBLIC_GA_ID`    | `G-Y6BWPQT47Q`                 | Google Analytics 4. Vazio desliga a medição |
 
 ## Deploy na Vercel
 
@@ -45,6 +46,15 @@ Deploys de **preview** respondem `Disallow: /` no `robots.txt` (pela variável `
 - Dados estruturados: Organization, WebSite, SoftwareApplication (com a oferta grátis) e FAQPage.
 - Ícones: `icon.svg`, `favicon.ico`, `apple-icon` e PNGs 192/512 para o manifest.
 - Cabeçalhos de segurança em `next.config.ts`.
+
+## Google Analytics e cookies
+
+- O GA4 (`G-Y6BWPQT47Q`) só carrega **depois** que o visitante clica em "Aceitar todos" no aviso de cookies (mesmo visual do aviso do app). Antes disso, nenhuma requisição vai para o Google e nenhum cookie `_ga` é criado.
+- Só roda no deploy de **produção** da Vercel (`NEXT_PUBLIC_VERCEL_ENV=production`); previews e `pnpm dev` não enviam dados.
+- A escolha fica no cookie `clapmoney_site_consent` (`<versão>.<all|essential>`, 1 ano). A versão é a data da Política de Privacidade (`LEGAL_UPDATED_AT`): ao mudar a política, todos respondem de novo.
+- "Preferências de cookies", no rodapé, reabre o aviso. Escolher "Só essenciais" desliga o GA e apaga os cookies `_ga`.
+- Sinais do Google e personalização de anúncios ficam desligados; os cookies do GA expiram em 13 meses.
+- No painel do GA, em Administrador › Coleta e modificação de dados › Retenção de dados, mantenha no máximo **14 meses** (é o que a política promete).
 
 ## Antes de publicar
 

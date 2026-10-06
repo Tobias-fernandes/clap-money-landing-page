@@ -53,7 +53,7 @@ export function HowItWorks() {
           intro="Nada de senha bancária e nada de digitar linha por linha. Quatro passos, uma vez por mês."
         />
 
-        <div className="mt-14 grid gap-x-14 lg:mt-16 lg:grid-cols-12">
+        <div className="mt-14 grid grid-cols-1 gap-x-14 lg:mt-16 lg:grid-cols-12">
           <ol className="lg:col-span-5">
             {STEPS.map((step, index) => (
               <li

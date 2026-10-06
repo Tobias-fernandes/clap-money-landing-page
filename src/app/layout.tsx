@@ -3,6 +3,8 @@
 import type { Metadata, Viewport } from "next";
 import { outfit } from "@/lib/fonts";
 import { toJsonLd } from "@/lib/jsonLd";
+import { CookieNotice } from "@/components/consent/CookieNotice";
+import { GoogleAnalytics } from "@/components/consent/GoogleAnalytics";
 import { SITE, SITE_URL } from "@/constants/site";
 import "./globals.css";
 
@@ -84,6 +86,8 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       <body className="min-h-dvh">
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: toJsonLd(organizationJsonLd) }} />
         {children}
+        <CookieNotice />
+        <GoogleAnalytics />
       </body>
     </html>
   );

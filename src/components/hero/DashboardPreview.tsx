@@ -31,6 +31,9 @@ const TOTALS = computeTotals(PASSBOOK_MONTHS);
 const NAV_BUTTON =
   "flex size-8 cursor-pointer items-center justify-center rounded-lg text-content-muted hover:bg-surface-hover hover:text-content focus-visible:ring-3 focus-visible:ring-brand-ring focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50";
 
+/** Month label on phones, like the app's MonthNav ("out/26"). */
+const SHORT_LABELS: Record<string, string> = { "2026-10": "out/26", "2026-11": "nov/26", "2026-12": "dez/26" };
+
 /** Rows shown in the list; the header still counts every transaction. */
 const VISIBLE_ROWS = 5;
 const LAST_DAY: Record<string, string> = { "10": "31", "11": "30", "12": "31" };
@@ -64,8 +67,9 @@ export function DashboardPreview() {
           >
             <ChevronLeft aria-hidden className="size-4.5" strokeWidth={1.8} />
           </button>
-          <p aria-live="polite" className="min-w-33 text-center text-15 font-medium">
-            {month.label.replace(" de ", " ")}
+          <p aria-live="polite" className="min-w-18 text-center text-15 font-medium md:min-w-33">
+            <span className="md:hidden">{SHORT_LABELS[month.id]}</span>
+            <span className="hidden md:inline">{month.label.replace(" de ", " ")}</span>
           </p>
           <button
             type="button"
@@ -92,7 +96,7 @@ export function DashboardPreview() {
         </span>
       </div>
 
-      <div className="grid grid-cols-2 gap-2.5 md:grid-cols-[1.4fr_1fr] md:gap-3">
+      <div className="grid grid-cols-1 gap-2.5 min-[380px]:grid-cols-2 md:grid-cols-[1.4fr_1fr] md:gap-3">
         <Card className="flex flex-col gap-2.5 p-3.5 md:p-5">
           <span className="text-14 font-medium text-content-muted">{month.projected ? "Saldo previsto" : "Saldo atual"}</span>
           <p className="flex items-baseline gap-1 whitespace-nowrap">
@@ -136,9 +140,9 @@ export function DashboardPreview() {
                 <span className="flex min-w-0 flex-1 flex-col gap-px">
                   <span className="flex min-w-0 items-center gap-1.5">
                     <span className="truncate text-14">{entry.description.replace(/ \d+\/\d+$/, "")}</span>
-                    {badge && <RecurrenceBadge label={badge.label} accessibleLabel={badge.accessible} />}
+                    {badge && <RecurrenceBadge label={badge.label} accessibleLabel={badge.accessible} className="max-[379px]:hidden" />}
                   </span>
-                  <span className="text-13 text-content-faint tabular-nums">
+                  <span className="truncate text-13 text-content-faint tabular-nums">
                     {entry.date}/2026 · {entry.category.name}
                   </span>
                 </span>

@@ -80,7 +80,7 @@ export function Installments() {
         />
 
         <Card className="mt-12 p-5 md:p-7">
-          <div className="grid gap-6 md:grid-cols-[auto_1fr] md:gap-10">
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-[auto_1fr] md:gap-10">
             <div className="flex items-center gap-3 md:self-start">
               <span className="flex size-9 items-center justify-center rounded-control bg-tag-1 text-on-tag-1">
                 <Laptop aria-hidden className="size-4.25" strokeWidth={1.8} />
@@ -95,7 +95,7 @@ export function Installments() {
 
             <div className="flex flex-col gap-2 md:justify-self-end">
               <span className="text-14 font-medium text-content-muted">Repetir</span>
-              <SegmentedControl label="Repetir" options={REPEAT_OPTIONS} value={repeat} onChange={setRepeat} />
+              <SegmentedControl label="Repetir" options={REPEAT_OPTIONS} value={repeat} onChange={setRepeat} fullWidthOnPhones />
               {repeat === "installments" && (
                 <label htmlFor={countId} className="flex items-center gap-2.5 text-14 text-content-muted">
                   Em
@@ -124,7 +124,7 @@ export function Installments() {
                   {MONTHS_AHEAD[index]}
                 </span>
                 <span className="text-13 text-content-faint tabular-nums">{rowLabel(index)}</span>
-                <span className="text-16 font-semibold text-expense tabular-nums">{formatMoney(cents)}</span>
+                <span className="text-15 font-semibold text-expense tabular-nums sm:text-16">{formatMoney(cents)}</span>
               </li>
             ))}
             {renderMore(MOBILE_MONTHS, "col-span-3 flex items-baseline gap-1.5 px-1 text-content-muted sm:hidden")}

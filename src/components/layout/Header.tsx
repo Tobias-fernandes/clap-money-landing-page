@@ -31,7 +31,7 @@ export function Header() {
           <ButtonLink href={APP_LINKS.login} variant="ghost" className="h-10 text-16 hover:bg-transparent hover:text-brand-emphasis max-md:hidden">
             Entrar
           </ButtonLink>
-          <ButtonLink href={APP_LINKS.signUp} className="h-10 text-16 max-sm:h-8 max-sm:px-3 max-sm:text-14">
+          <ButtonLink href={APP_LINKS.signUp} className="h-10 text-16 max-sm:h-8 max-sm:px-3 max-sm:text-14 max-[359px]:hidden">
             Criar conta grátis
           </ButtonLink>
           <MobileMenu />

@@ -11,7 +11,7 @@ import { cn } from "@/lib/cn";
 export function Pricing() {
   return (
     <section id={SECTION_IDS.pricing} aria-labelledby="pricing-title" className="border-t border-border">
-      <div className="mx-auto grid max-w-300 gap-10 px-4 py-20 md:px-6 lg:grid-cols-3 lg:gap-3 lg:py-28">
+      <div className="mx-auto grid grid-cols-1 max-w-300 gap-10 px-4 py-20 md:px-6 lg:grid-cols-3 lg:gap-3 lg:py-28">
         <SectionHeading
           id="pricing-title"
           title="Comece grátis."

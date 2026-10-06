@@ -45,7 +45,7 @@ export function SpendingGoal() {
 
   return (
     <section aria-labelledby="goal-title" className="border-t border-border">
-      <div className="mx-auto grid max-w-300 gap-10 px-4 py-20 md:px-6 lg:grid-cols-12 lg:items-center lg:py-28">
+      <div className="mx-auto grid grid-cols-1 max-w-300 gap-10 px-4 py-20 md:px-6 lg:grid-cols-12 lg:items-center lg:py-28">
         <SectionHeading
           id="goal-title"
           title="Um aviso antes do aperto."

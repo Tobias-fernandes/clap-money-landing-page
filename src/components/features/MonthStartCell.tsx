@@ -21,7 +21,7 @@ export function MonthStartCell() {
         <p className="mt-2 text-15 leading-relaxed text-content-muted">Recebe dia 5? Faça o mês financeiro começar no dia 5.</p>
       </div>
       <div className="mt-auto">
-        <div role="radiogroup" aria-labelledby={titleId} className="flex w-fit flex-wrap gap-0.5 rounded-control border border-border bg-surface-strong p-0.75">
+        <div role="radiogroup" aria-labelledby={titleId} className="flex w-fit gap-0.5 rounded-control border border-border bg-surface-strong p-0.75 max-sm:grid max-sm:w-full max-sm:grid-cols-6">
           {DAYS.map((d) => (
             <button
               key={d}
@@ -30,7 +30,7 @@ export function MonthStartCell() {
               aria-checked={d === day}
               onClick={() => setDay(d)}
               className={cn(
-                "min-w-10 cursor-pointer rounded-tag px-3 py-1.25 text-14 font-medium tabular-nums transition-colors focus-visible:ring-3 focus-visible:ring-brand-ring focus-visible:outline-none",
+                "cursor-pointer rounded-tag px-3 py-1.25 max-sm:px-0 sm:min-w-10 text-14 font-medium tabular-nums transition-colors focus-visible:ring-3 focus-visible:ring-brand-ring focus-visible:outline-none",
                 d === day ? "bg-surface text-brand-emphasis shadow-segment" : "text-content-muted hover:text-content",
               )}
             >
