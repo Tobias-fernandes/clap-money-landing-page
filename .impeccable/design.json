@@ -1,0 +1,665 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-06T03:31:22+00:00",
+  "title": "Design System: ClapMoney Landing",
+  "extensions": {
+    "sourceOfTruth": "../clapMoney/src/app/styles/global.css",
+    "colorMeta": {
+      "brand-solid": {
+        "role": "primary",
+        "displayName": "ClapMoney Teal",
+        "canonical": "#0f6b5a",
+        "darkValue": "#4fb09c",
+        "tonalRamp": [
+          "#0b5547",
+          "#0f6b5a",
+          "#4fb09c",
+          "#5db8a5",
+          "#86d9b9",
+          "#e2efeb"
+        ]
+      },
+      "brand-emphasis": {
+        "role": "primary",
+        "displayName": "ClapMoney Teal (text)",
+        "canonical": "#0f6b5a",
+        "darkValue": "#5db8a5"
+      },
+      "brand-700": {
+        "role": "primary",
+        "displayName": "Deep Teal",
+        "canonical": "#0b5547"
+      },
+      "brand-50": {
+        "role": "primary",
+        "displayName": "Mint Wash",
+        "canonical": "#e2efeb",
+        "darkValue": "#16302a"
+      },
+      "on-brand": {
+        "role": "primary",
+        "displayName": "On Teal",
+        "canonical": "#ffffff",
+        "darkValue": "#06120e"
+      },
+      "brand-ring": {
+        "role": "primary",
+        "displayName": "Focus Halo",
+        "canonical": "rgb(15 107 90 / 0.22)",
+        "darkValue": "rgb(79 176 156 / 0.3)"
+      },
+      "income": {
+        "role": "secondary",
+        "displayName": "Income Green",
+        "canonical": "#16a34a",
+        "darkValue": "#62c78c",
+        "tonalRamp": [
+          "#116b33",
+          "#15803d",
+          "#16a34a",
+          "#62c78c",
+          "#e7f6ec"
+        ]
+      },
+      "income-tint": {
+        "role": "secondary",
+        "displayName": "Income Tint",
+        "canonical": "#e7f6ec",
+        "darkValue": "#15291d"
+      },
+      "expense": {
+        "role": "secondary",
+        "displayName": "Expense Red",
+        "canonical": "#dc2626",
+        "darkValue": "#ee8080",
+        "tonalRamp": [
+          "#a51818",
+          "#c81e1e",
+          "#dc2626",
+          "#ee8080",
+          "#f5caca",
+          "#fdeeee"
+        ]
+      },
+      "expense-solid": {
+        "role": "secondary",
+        "displayName": "Expense Red Solid",
+        "canonical": "#c81e1e",
+        "darkValue": "#ee7a7a"
+      },
+      "expense-tint": {
+        "role": "secondary",
+        "displayName": "Expense Tint",
+        "canonical": "#fdeeee",
+        "darkValue": "#2a1716"
+      },
+      "balance-line": {
+        "role": "secondary",
+        "displayName": "Balance Blue",
+        "canonical": "#2563eb",
+        "darkValue": "#7fa7f2"
+      },
+      "warn": {
+        "role": "tertiary",
+        "displayName": "Alert Amber",
+        "canonical": "#d97706",
+        "darkValue": "#e2a54f",
+        "tonalRamp": [
+          "#92500a",
+          "#d97706",
+          "#e2a54f",
+          "#ebbb73",
+          "#fdf4e4"
+        ]
+      },
+      "warn-text": {
+        "role": "tertiary",
+        "displayName": "Amber Text",
+        "canonical": "#92500a",
+        "darkValue": "#ebbb73"
+      },
+      "warn-tint": {
+        "role": "tertiary",
+        "displayName": "Amber Tint",
+        "canonical": "#fdf4e4",
+        "darkValue": "#2a2214"
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Card White",
+        "canonical": "#ffffff",
+        "darkValue": "#141a17"
+      },
+      "surface-muted": {
+        "role": "neutral",
+        "displayName": "Page Mist",
+        "canonical": "#f5f8f6",
+        "darkValue": "#0d1210"
+      },
+      "surface-strong": {
+        "role": "neutral",
+        "displayName": "Inset Grey",
+        "canonical": "#f0f4f1",
+        "darkValue": "#19211d"
+      },
+      "surface-hover": {
+        "role": "neutral",
+        "displayName": "Row Hover",
+        "canonical": "#f1f5f2",
+        "darkValue": "#1a2320"
+      },
+      "track": {
+        "role": "neutral",
+        "displayName": "Track",
+        "canonical": "#edf1ee",
+        "darkValue": "#1f2924"
+      },
+      "content": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "#111a15",
+        "darkValue": "#e6ede9",
+        "tonalRamp": [
+          "#0d1210",
+          "#111a15",
+          "#5b6961",
+          "#7e8b84",
+          "#cbd5cf",
+          "#e2e8e4",
+          "#f0f4f1",
+          "#f5f8f6"
+        ]
+      },
+      "content-muted": {
+        "role": "neutral",
+        "displayName": "Muted Ink",
+        "canonical": "#5b6961",
+        "darkValue": "#9aa8a0"
+      },
+      "content-faint": {
+        "role": "neutral",
+        "displayName": "Faint Ink",
+        "canonical": "#7e8b84",
+        "darkValue": "#7a8880"
+      },
+      "border": {
+        "role": "neutral",
+        "displayName": "Hairline",
+        "canonical": "#e2e8e4",
+        "darkValue": "#242e29"
+      },
+      "border-strong": {
+        "role": "neutral",
+        "displayName": "Strong Hairline",
+        "canonical": "#cbd5cf",
+        "darkValue": "#34413b"
+      },
+      "tag-0": {
+        "role": "neutral",
+        "displayName": "Category tag 0",
+        "canonical": "#e4eee1",
+        "darkValue": "#3b573555",
+        "tonalRamp": [
+          "#3b5735",
+          "#e4eee1"
+        ]
+      },
+      "on-tag-0": {
+        "role": "neutral",
+        "displayName": "Category text 0",
+        "canonical": "#3b5735",
+        "darkValue": "#e4eee1"
+      },
+      "tag-1": {
+        "role": "neutral",
+        "displayName": "Category tag 1",
+        "canonical": "#ece8f6",
+        "darkValue": "#54497a55",
+        "tonalRamp": [
+          "#54497a",
+          "#ece8f6"
+        ]
+      },
+      "on-tag-1": {
+        "role": "neutral",
+        "displayName": "Category text 1",
+        "canonical": "#54497a",
+        "darkValue": "#ece8f6"
+      },
+      "tag-2": {
+        "role": "neutral",
+        "displayName": "Category tag 2",
+        "canonical": "#e2edf5",
+        "darkValue": "#2f567255",
+        "tonalRamp": [
+          "#2f5672",
+          "#e2edf5"
+        ]
+      },
+      "on-tag-2": {
+        "role": "neutral",
+        "displayName": "Category text 2",
+        "canonical": "#2f5672",
+        "darkValue": "#e2edf5"
+      },
+      "tag-3": {
+        "role": "neutral",
+        "displayName": "Category tag 3",
+        "canonical": "#f7eadc",
+        "darkValue": "#7a4c2255",
+        "tonalRamp": [
+          "#7a4c22",
+          "#f7eadc"
+        ]
+      },
+      "on-tag-3": {
+        "role": "neutral",
+        "displayName": "Category text 3",
+        "canonical": "#7a4c22",
+        "darkValue": "#f7eadc"
+      },
+      "tag-4": {
+        "role": "neutral",
+        "displayName": "Category tag 4",
+        "canonical": "#e7ebf0",
+        "darkValue": "#3e4b5d55",
+        "tonalRamp": [
+          "#3e4b5d",
+          "#e7ebf0"
+        ]
+      },
+      "on-tag-4": {
+        "role": "neutral",
+        "displayName": "Category text 4",
+        "canonical": "#3e4b5d",
+        "darkValue": "#e7ebf0"
+      },
+      "tag-5": {
+        "role": "neutral",
+        "displayName": "Category tag 5",
+        "canonical": "#f1ece0",
+        "darkValue": "#64543255",
+        "tonalRamp": [
+          "#645432",
+          "#f1ece0"
+        ]
+      },
+      "on-tag-5": {
+        "role": "neutral",
+        "displayName": "Category text 5",
+        "canonical": "#645432",
+        "darkValue": "#f1ece0"
+      },
+      "tag-6": {
+        "role": "neutral",
+        "displayName": "Category tag 6",
+        "canonical": "#f4e6ed",
+        "darkValue": "#7a3e5b55",
+        "tonalRamp": [
+          "#7a3e5b",
+          "#f4e6ed"
+        ]
+      },
+      "on-tag-6": {
+        "role": "neutral",
+        "displayName": "Category text 6",
+        "canonical": "#7a3e5b",
+        "darkValue": "#f4e6ed"
+      },
+      "tag-7": {
+        "role": "neutral",
+        "displayName": "Category tag 7",
+        "canonical": "#f5f0d8",
+        "darkValue": "#685a1c55",
+        "tonalRamp": [
+          "#685a1c",
+          "#f5f0d8"
+        ]
+      },
+      "on-tag-7": {
+        "role": "neutral",
+        "displayName": "Category text 7",
+        "canonical": "#685a1c",
+        "darkValue": "#f5f0d8"
+      },
+      "tag-8": {
+        "role": "neutral",
+        "displayName": "Category tag 8",
+        "canonical": "#dff0ec",
+        "darkValue": "#2c5d5655",
+        "tonalRamp": [
+          "#2c5d56",
+          "#dff0ec"
+        ]
+      },
+      "on-tag-8": {
+        "role": "neutral",
+        "displayName": "Category text 8",
+        "canonical": "#2c5d56",
+        "darkValue": "#dff0ec"
+      },
+      "tag-9": {
+        "role": "neutral",
+        "displayName": "Category tag 9",
+        "canonical": "#ecedea",
+        "darkValue": "#53554f55",
+        "tonalRamp": [
+          "#53554f",
+          "#ecedea"
+        ]
+      },
+      "on-tag-9": {
+        "role": "neutral",
+        "displayName": "Category text 9",
+        "canonical": "#53554f",
+        "darkValue": "#ecedea"
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Hero h1 only; 44px phones, 60px md, 52px lg, 60px xl."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section h2 via SectionHeading; 32px rising to 42px at md."
+      },
+      "figure": {
+        "displayName": "Figure",
+        "purpose": "Hero balance in cards, 26 to 38px; plan prices at 42px."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Feature-cell titles (20px); import step titles use 24 to 26px."
+      },
+      "body-lead": {
+        "displayName": "Body lead",
+        "purpose": "Hero subtext (18 to 20px) and section intros (17 to 18px), muted."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Step bodies, plan summaries, feature descriptions (15 to 16px)."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Buttons, nav links, field and card labels."
+      },
+      "caption": {
+        "displayName": "Caption",
+        "purpose": "Dates, meta lines, chips, 'Dados de exemplo' notes (12 to 13px)."
+      }
+    },
+    "typeScale": "text-11 through text-68, named by px: 11,12,13,14,15,16,17,18,19,20,22,24,26,30,32,34,38,40,42,44,52,60,64,68",
+    "tracking": [
+      {
+        "name": "heading",
+        "value": "-0.01em"
+      },
+      {
+        "name": "display",
+        "value": "-0.02em"
+      },
+      {
+        "name": "section",
+        "value": "-0.025em"
+      },
+      {
+        "name": "hero",
+        "value": "-0.035em"
+      }
+    ],
+    "shadows": [
+      {
+        "name": "float",
+        "value": "0 12px 32px rgb(16 30 22 / 0.1), 0 2px 6px rgb(16 30 22 / 0.05)",
+        "purpose": "Floating layers: popovers, drawers, toasts, import dialogs on the page."
+      },
+      {
+        "name": "float-dark",
+        "value": "0 12px 32px rgb(0 0 0 / 0.45)",
+        "purpose": "Dark-mode pair of float and mockup."
+      },
+      {
+        "name": "mockup",
+        "value": "0 30px 60px -20px rgb(16 30 22 / 0.18)",
+        "purpose": "Landing only: the hero app-window frame."
+      },
+      {
+        "name": "segment",
+        "value": "0 1px 2px rgb(0 0 0 / 0.08)",
+        "purpose": "Selected segment of a segmented control."
+      },
+      {
+        "name": "fab",
+        "value": "0 8px 20px rgb(15 107 90 / 0.32)",
+        "purpose": "App token for the floating action button; not used on the landing."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.23, 1, 0.32, 1)",
+        "purpose": "Row entrance, rolling digits, FAQ height."
+      },
+      {
+        "name": "ease-drawer",
+        "value": "cubic-bezier(0.2, 0.8, 0.2, 1)",
+        "purpose": "App drawer slide-in."
+      },
+      {
+        "name": "row-in",
+        "value": "320ms ease-out, 6px rise and fade, 45ms stagger per row",
+        "purpose": "Rows entering a list; only when motion is allowed."
+      },
+      {
+        "name": "rolling-digits",
+        "value": "460 to 640ms per digit, ease-out",
+        "purpose": "Balance change on month switch; instant under reduced motion."
+      },
+      {
+        "name": "import-step",
+        "value": "300ms ease-out opacity, 4px blur, 0.98 scale",
+        "purpose": "Pinned import dialog state changes; off under reduced motion."
+      },
+      {
+        "name": "indeterminate",
+        "value": "1.1s ease-in-out infinite",
+        "purpose": "'Lendo seu extrato…' progress bar; motion-safe only."
+      },
+      {
+        "name": "faq-details",
+        "value": "240ms ease-out block-size",
+        "purpose": "Accordion open; off under reduced motion."
+      },
+      {
+        "name": "button-color",
+        "value": "150ms color, background and filter transition",
+        "purpose": "All buttons; no press scale."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "sm",
+        "value": "640px"
+      },
+      {
+        "name": "md",
+        "value": "720px"
+      },
+      {
+        "name": "lg",
+        "value": "1000px"
+      },
+      {
+        "name": "xl",
+        "value": "1280px"
+      }
+    ],
+    "darkMode": "prefers-color-scheme (the app uses a .dark class); dark values listed per color as darkValue."
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Main action (Criar conta grátis). Sizes sm 32, md 38, lg 42px, icon 34px square; no press scale.",
+      "html": "<button class=\"ds-btn ds-btn-primary\">Criar conta grátis</button>",
+      "css": ".ds-btn { display:inline-flex; align-items:center; justify-content:center; gap:6px; height:38px; padding:0 16px; border-radius:var(--radius-control); font-family:var(--font-sans); font-size:0.875rem; font-weight:500; white-space:nowrap; cursor:pointer; border:0; transition:background-color 150ms cubic-bezier(0.4,0,0.2,1), color 150ms cubic-bezier(0.4,0,0.2,1), filter 150ms cubic-bezier(0.4,0,0.2,1); } .ds-btn:focus-visible { outline:none; box-shadow:0 0 0 3px var(--color-brand-ring); } .ds-btn-primary { background:var(--color-brand-solid); color:var(--color-on-brand); } .ds-btn-primary:hover { filter:brightness(1.08); }"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Second action (Ver como funciona, Entrar).",
+      "html": "<button class=\"ds-btn-secondary\">Ver como funciona</button>",
+      "css": ".ds-btn-secondary { display:inline-flex; align-items:center; gap:6px; height:38px; padding:0 16px; border-radius:var(--radius-control); border:1px solid var(--color-border); background:var(--color-surface); color:var(--color-content); font-family:var(--font-sans); font-size:0.875rem; font-weight:500; cursor:pointer; transition:background-color 150ms; } .ds-btn-secondary:hover { background:var(--color-surface-hover); } .ds-btn-secondary:focus-visible { outline:none; box-shadow:0 0 0 3px var(--color-brand-ring); }"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Low-emphasis action; no background until hover.",
+      "html": "<button class=\"ds-btn-ghost\">Cancelar</button>",
+      "css": ".ds-btn-ghost { display:inline-flex; align-items:center; height:38px; padding:0 16px; border-radius:var(--radius-control); border:0; background:transparent; color:var(--color-content); font-family:var(--font-sans); font-size:0.875rem; font-weight:500; cursor:pointer; transition:background-color 150ms; } .ds-btn-ghost:hover { background:var(--color-surface-hover); } .ds-btn-ghost:focus-visible { outline:none; box-shadow:0 0 0 3px var(--color-brand-ring); }"
+    },
+    {
+      "name": "Card",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "The app's flat card: 12px radius, hairline border, white surface, no shadow.",
+      "html": "<div class=\"ds-card\"><span class=\"ds-card-label\">Saldo atual</span><p class=\"ds-card-figure\">R$ 4.218<span>,90</span></p><span class=\"ds-card-meta\">Até 31/10/2026</span></div>",
+      "css": ".ds-card { display:flex; flex-direction:column; gap:10px; padding:20px; border-radius:12px; border:1px solid var(--color-border); background:var(--color-surface); color:var(--color-content); font-family:var(--font-sans); max-width:320px; } .ds-card-label { font-size:0.875rem; font-weight:500; color:var(--color-content-muted); } .ds-card-figure { margin:0; font-size:2.375rem; line-height:1; font-weight:700; letter-spacing:-0.02em; font-variant-numeric:tabular-nums; } .ds-card-figure span { font-size:1.125rem; font-weight:600; } .ds-card-meta { font-size:0.8125rem; color:var(--color-content-faint); }"
+    },
+    {
+      "name": "Segmented Control",
+      "kind": "input",
+      "refersTo": "segmented-control",
+      "description": "The app's SegmentedControl: inset track, selected segment white with teal text and the segment shadow.",
+      "html": "<div class=\"ds-seg\" role=\"radiogroup\"><button class=\"ds-seg-item\">Não repete</button><button class=\"ds-seg-item ds-seg-on\" aria-checked=\"true\">Parcelado</button><button class=\"ds-seg-item\">Mensal</button></div>",
+      "css": ".ds-seg { display:inline-grid; grid-template-columns:repeat(3,1fr); gap:2px; padding:3px; border-radius:var(--radius-control); border:1px solid var(--color-border); background:var(--color-surface-strong); font-family:var(--font-sans); } .ds-seg-item { border:0; background:transparent; padding:5px 8px; border-radius:var(--radius-tag); font-size:0.8125rem; font-weight:500; color:var(--color-content-muted); cursor:pointer; white-space:nowrap; } .ds-seg-item:hover { color:var(--color-content); } .ds-seg-item:focus-visible { outline:none; box-shadow:0 0 0 3px var(--color-brand-ring); } .ds-seg-on { background:var(--color-surface); color:var(--color-brand-emphasis); box-shadow:var(--shadow-segment); }"
+    },
+    {
+      "name": "Category Tag",
+      "kind": "chip",
+      "refersTo": "category-tag",
+      "description": "Category chip in one of the ten tag pairs, with a 12px lucide icon at 2 stroke.",
+      "html": "<span class=\"ds-tag\"><svg viewBox=\"0 0 24 24\" width=\"12\" height=\"12\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><circle cx=\"8\" cy=\"21\" r=\"1\"/><circle cx=\"19\" cy=\"21\" r=\"1\"/><path d=\"M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12\"/></svg>Mercado</span>",
+      "css": ".ds-tag { display:inline-flex; align-items:center; gap:5px; padding:3px 8px; border-radius:6px; background:var(--color-tag-3); color:var(--color-on-tag-3); font-family:var(--font-sans); font-size:0.8125rem; font-weight:500; white-space:nowrap; }"
+    },
+    {
+      "name": "Recurrence Badge",
+      "kind": "chip",
+      "refersTo": "recurrence-badge",
+      "description": "'3/6' or 'Mensal' badge on recurring transactions.",
+      "html": "<span class=\"ds-rec\"><svg viewBox=\"0 0 24 24\" width=\"12\" height=\"12\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m17 2 4 4-4 4\"/><path d=\"M3 11v-1a4 4 0 0 1 4-4h14\"/><path d=\"m7 22-4-4 4-4\"/><path d=\"M21 13v1a4 4 0 0 1-4 4H3\"/></svg>3/6</span>",
+      "css": ".ds-rec { display:inline-flex; align-items:center; gap:4px; padding:1px 6px; border-radius:6px; background:var(--color-surface-strong); color:var(--color-content-muted); font-family:var(--font-sans); font-size:0.75rem; font-weight:500; font-variant-numeric:tabular-nums; }"
+    },
+    {
+      "name": "Header Navigation",
+      "kind": "nav",
+      "refersTo": "nav-link",
+      "description": "Sticky header links: muted 14px medium, row-hover tint on hover.",
+      "html": "<nav class=\"ds-nav\"><a href=\"#\" class=\"ds-nav-link\">Como funciona</a><a href=\"#\" class=\"ds-nav-link\">Recursos</a><a href=\"#\" class=\"ds-nav-link\">Planos</a></nav>",
+      "css": ".ds-nav { display:flex; gap:4px; padding:12px; background:var(--color-surface-muted); border-bottom:1px solid var(--color-border); font-family:var(--font-sans); } .ds-nav-link { padding:8px 12px; border-radius:8px; font-size:0.875rem; font-weight:500; color:var(--color-content-muted); text-decoration:none; transition:color 150ms, background-color 150ms; } .ds-nav-link:hover { background:var(--color-surface-hover); color:var(--color-content); } .ds-nav-link:focus-visible { outline:none; box-shadow:0 0 0 3px var(--color-brand-ring); }"
+    },
+    {
+      "name": "Input",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "The app's Input with its label; amount fields use the currency mask.",
+      "html": "<label class=\"ds-field\"><span class=\"ds-label\">Meta de gastos do mês</span><input class=\"ds-input\" value=\"R$ 3.000,00\" inputmode=\"numeric\"></label>",
+      "css": ".ds-field { display:flex; flex-direction:column; gap:8px; max-width:360px; font-family:var(--font-sans); } .ds-label { font-size:0.875rem; font-weight:500; color:var(--color-content-muted); } .ds-input { height:42px; width:100%; border-radius:var(--radius-control); border:1px solid var(--color-border); background:var(--color-surface); padding:0 12px; font-family:inherit; font-size:0.9375rem; color:var(--color-content); outline:none; font-variant-numeric:tabular-nums; } .ds-input::placeholder { color:var(--color-content-faint); } .ds-input:focus-visible { border-color:var(--color-brand-emphasis); box-shadow:0 0 0 3px var(--color-brand-ring); }"
+    },
+    {
+      "name": "Goal Preview",
+      "kind": "custom",
+      "refersTo": "goal-preview",
+      "description": "The app's GoalPreview: spending against the goal, 8px bar with an 80% marker, toned status label.",
+      "html": "<div class=\"ds-goal\"><div class=\"ds-goal-head\"><span>Prévia · gasto em outubro: <b>R$ 2.310,00</b></span><span class=\"ds-goal-status\">Dentro da meta · 77%</span></div><div class=\"ds-goal-track\"><div class=\"ds-goal-fill\" style=\"width:77%\"></div><div class=\"ds-goal-mark\"></div></div><div class=\"ds-goal-scale\"><span>0</span><span class=\"ds-goal-80\">80%</span><span>R$ 3.000,00</span></div></div>",
+      "css": ".ds-goal { display:flex; flex-direction:column; gap:10px; max-width:440px; padding:14px 16px; border-radius:var(--radius-control); background:var(--color-surface-strong); font-family:var(--font-sans); font-variant-numeric:tabular-nums; } .ds-goal-head { display:flex; flex-wrap:wrap; justify-content:space-between; gap:12px; font-size:0.875rem; color:var(--color-content-muted); } .ds-goal-head b { font-weight:500; color:var(--color-content); } .ds-goal-status { font-weight:500; color:var(--color-brand-emphasis); } .ds-goal-track { position:relative; height:8px; border-radius:9999px; background:var(--color-track); } .ds-goal-fill { position:absolute; inset:0 auto 0 0; border-radius:9999px; background:var(--color-brand-solid); transition:width 250ms; } .ds-goal-mark { position:absolute; top:-3px; bottom:-3px; left:80%; border-left:2px solid var(--color-surface-strong); } .ds-goal-scale { position:relative; height:14px; font-size:0.75rem; color:var(--color-content-faint); } .ds-goal-scale span { position:absolute; left:0; } .ds-goal-scale span:last-child { left:auto; right:0; } .ds-goal-scale .ds-goal-80 { left:80%; transform:translateX(-50%); }"
+    },
+    {
+      "name": "Import Review Tabs",
+      "kind": "chip",
+      "refersTo": "review-tab",
+      "description": "The app's ImportReviewTabs: bordered 34px tabs, active filled with ink.",
+      "html": "<div class=\"ds-tabs\"><span class=\"ds-tab ds-tab-on\">Todas <small>6</small></span><span class=\"ds-tab\"><i></i>Precisam de atenção <small>1</small></span><span class=\"ds-tab\">Duplicadas <small>1</small></span></div>",
+      "css": ".ds-tabs { display:flex; gap:4px; font-family:var(--font-sans); } .ds-tab { display:flex; align-items:center; gap:7px; height:34px; padding:0 12px; border-radius:8px; border:1px solid var(--color-border); font-size:0.875rem; font-weight:500; color:var(--color-content-muted); white-space:nowrap; cursor:pointer; transition:background-color 200ms, color 200ms; } .ds-tab:hover { color:var(--color-content); } .ds-tab small { font-size:0.8125rem; font-weight:400; color:var(--color-content-faint); } .ds-tab i { width:7px; height:7px; border-radius:9999px; background:var(--color-warn); } .ds-tab-on { border-color:var(--color-content); background:var(--color-content); color:var(--color-surface); } .ds-tab-on small { color:var(--color-surface); }"
+    },
+    {
+      "name": "App Window",
+      "kind": "custom",
+      "refersTo": "app-window",
+      "description": "Landing addition: the hero frame that holds the MonthNav and dashboard cards, with the Mockup shadow.",
+      "html": "<div class=\"ds-window\"><div class=\"ds-window-card\">Saldo atual</div><div class=\"ds-window-card\">Saídas do mês</div></div>",
+      "css": ".ds-window { display:grid; grid-template-columns:1.4fr 1fr; gap:12px; padding:14px; border-radius:16px; border:1px solid var(--color-border); background:var(--color-surface-muted); box-shadow:var(--shadow-mockup); font-family:var(--font-sans); max-width:440px; } .ds-window-card { padding:20px; border-radius:12px; border:1px solid var(--color-border); background:var(--color-surface); font-size:0.875rem; font-weight:500; color:var(--color-content-muted); } @media (prefers-color-scheme: dark) { .ds-window { box-shadow:var(--shadow-float-dark); } }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The App, Opened Early",
+    "overview": "The landing is not a marketing skin over the product; it is the product's own visual world, rebuilt fragment by fragment. Pale green-grey page, white cards with one hairline border, a single deep teal for action and selection, and money colors (green in, red out) that mean exactly what they mean inside the app. Every demonstration on the page is a working ClapMoney screen fragment with labelled sample data, so the visitor learns the interface before signing up.\n\nDensity is the app's: compact 13 to 15px interface text inside cards, set against a larger marketing layer (section headlines at 42px, hero at 60px) that lives outside the cards. Depth is flat by default; shadows are reserved for things that float. Interactive fragments copy the app's own controls (MonthNav, RepeatField, GoalPreview, CategoryFormModal pickers, TypeToggle, ImportReviewTabs) class for class. Motion is small and purposeful: rows rise into lists, balance digits roll, the pinned import dialog changes one state per scroll step, and all of it stands down under reduced motion.",
+    "keyCharacteristics": [
+      "Tokens, type, radii and icons identical to the ClapMoney app; the landing adds only a heading scale and the hero frame.",
+      "Flat white cards on a muted green-grey page; one border, no shadow.",
+      "Deep teal brand used for primary actions, selection and focus, never as a large fill except the soft brand-50 tint.",
+      "Money semantics are fixed: income green, expense red, warn amber, balance-line blue.",
+      "Every demo is labelled \"Dados de exemplo\".",
+      "Dark theme is the app's dark token set, switched by the device setting."
+    ],
+    "rules": [
+      {
+        "name": "The Verbatim Rule",
+        "body": "A color exists on the landing only if it exists in `../clapMoney/src/app/styles/global.css`. No landing-only hues.",
+        "section": "colors"
+      },
+      {
+        "name": "The Money Means Money Rule",
+        "body": "Green and red mark income and expense, amber marks a warning. They are never decoration, never section accents.",
+        "section": "colors"
+      },
+      {
+        "name": "The Ten Pairs Rule",
+        "body": "Categories pick one of the ten tag pairs by index; no custom category colors.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Family Rule",
+        "body": "Outfit only. Contrast comes from 400/500/600/700 and size, not from a second face.",
+        "section": "typography"
+      },
+      {
+        "name": "The Tabular Money Rule",
+        "body": "Every money value, date and count uses tabular figures so digits align and rolling digits do not jitter.",
+        "section": "typography"
+      },
+      {
+        "name": "The Balanced Heading Rule",
+        "body": "h1 to h3 use balanced wrapping and paragraphs use pretty wrapping (set globally).",
+        "section": "typography"
+      },
+      {
+        "name": "The Only Floaters Cast Shadows Rule",
+        "body": "A resting card never has a shadow. If it does not float, it gets a border instead.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do take every color, size, radius and shadow from `../clapMoney/src/app/styles/global.css`, and add new landing tokens there first.",
+      "Do build demonstrations from the app's primitives (Card, button classes, SegmentedControl, input classes, CategoryTag, CategoryIcon, RecurrenceBadge), copying the app's classes rather than restyling them, with labelled sample data (\"Dados de exemplo\").",
+      "Do keep resting cards flat: white surface, 1px hairline, 12px radius.",
+      "Do use the 1200px container, 80px/112px section padding and the 12-column 5/7 split for two-column sections.",
+      "Do use tabular figures for every amount and keep income green, expense red.",
+      "Do gate every animation on reduced motion, and give animated values a plain screen-reader text.",
+      "Do use lucide icons at 1.8 or 2 stroke."
+    ],
+    "donts": [
+      "Don't introduce a color, font or radius that the app does not have.",
+      "Don't put shadows on resting cards; Float, Mockup and Segment are the only shadows, each for its own role.",
+      "Don't add button sizes or press effects the app's Button variants do not have.",
+      "Don't use green, red or amber as decoration or section accents.",
+      "Don't give categories colors outside the ten tag pairs.",
+      "Don't add a second typeface.",
+      "Don't show a demo without its \"Dados de exemplo\" label."
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+# Dependencies
+node_modules
+
+# Next.js
+.next
+out
+next-env.d.ts
+*.tsbuildinfo
+
+# Vercel
+.vercel
+
+# Environment files: only .env.example is versioned
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+
+# Editor and OS files
+.idea
+.DS_Store
+
+# Impeccable review captures (regenerated on each review)
+.impeccable/review
