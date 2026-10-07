@@ -1,8 +1,9 @@
-// 404 page with the way back to the landing.
+// 404 page: the app's NotFoundPage copied as-is (../clapMoney/src/pages/errors
+// /NotFoundPage), same illustration, copy and button, without header/footer.
 import type { Metadata } from "next";
-import { Header } from "@/components/layout/Header";
-import { Footer } from "@/components/layout/Footer";
-import { ButtonLink } from "@/components/ui/ButtonLink";
+import Image from "next/image";
+import Link from "next/link";
+import { buttonClasses } from "@/components/ui/buttonClasses";
 
 export const metadata: Metadata = {
   title: "Página não encontrada",
@@ -11,17 +12,14 @@ export const metadata: Metadata = {
 
 export default function NotFound() {
   return (
-    <>
-      <Header />
-      <main id="conteudo" className="mx-auto flex max-w-300 flex-col items-start px-4 py-24 md:px-6 lg:py-32">
-        <p className="rounded-md bg-expense-tint px-2 py-0.5 text-13 font-medium text-expense">Erro 404</p>
-        <h1 className="mt-4 max-w-160 text-38 leading-[1.08] font-bold tracking-section md:text-52">Não encontramos esta página.</h1>
-        <p className="mt-4 max-w-120 text-17 leading-relaxed text-content-muted">O endereço pode ter mudado ou ter sido digitado errado.</p>
-        <ButtonLink href="/" size="lg" className="mt-8">
-          Voltar para o início
-        </ButtonLink>
-      </main>
-      <Footer />
-    </>
+    <main className="flex min-h-dvh flex-col items-center justify-center gap-4 px-6 py-10 text-center">
+      <Image src="/not-found.webp" alt="" width={660} height={550} priority className="mb-2 h-auto w-64 max-w-full md:w-80" />
+      <p className="text-20 font-semibold text-brand-emphasis">404</p>
+      <h1 className="text-2xl font-semibold">Página não encontrada</h1>
+      <p className="max-w-md text-content-muted">O endereço acessado não existe ou foi removido.</p>
+      <Link href="/" className={buttonClasses()}>
+        Voltar para o início
+      </Link>
+    </main>
   );
 }
