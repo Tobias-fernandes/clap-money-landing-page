@@ -1,9 +1,13 @@
 // Public URLs and identity of the site. Every absolute URL of the landing
 // (canonical, sitemap, Open Graph, JSON-LD, app links) is built from here.
 
-export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL ?? "https://clapmoney.com.br").replace(/\/$/, "");
+export const SITE_URL = (
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://clapmoney.com.br"
+).replace(/\/$/, "");
 
-export const APP_URL = (process.env.NEXT_PUBLIC_APP_URL ?? "https://app.clapmoney.com.br").replace(/\/$/, "");
+export const APP_URL = (
+  process.env.NEXT_PUBLIC_APP_URL ?? "https://app.clapmoney.com.br"
+).replace(/\/$/, "");
 
 export const APP_LINKS = {
   signUp: `${APP_URL}/criar-conta`,
@@ -12,8 +16,9 @@ export const APP_LINKS = {
 
 export const SITE = {
   name: "ClapMoney",
-  title: "ClapMoney: controle financeiro que já mostra o mês que vem",
-  shortDescription: "Importe o extrato, organize por categoria e veja as próximas parcelas.",
+  title: "ClapMoney — Controle financeiro que já mostra o mês que vem",
+  shortDescription:
+    "Importe o extrato, organize por categoria e veja as próximas parcelas.",
   description:
     "Importe o extrato OFX do seu banco, organize entradas e saídas por categoria e veja as parcelas e mensalidades dos próximos meses. Crie sua conta grátis.",
   locale: "pt_BR",
